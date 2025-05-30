@@ -14,11 +14,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Log in to Docker Hub
-        run: |
-          echo "${{ secrets.DOCKERHUBPASSWORD }}" | docker login -u "${{ secrets.DOCKERHUBID }}" --password-stdin
+        run: echo "dckr_pat_URockxw0LZZX0NzkgMkCxacE9Kc" | docker login -u "virtualflux" --password-stdin
 
       - name: Build Docker Image
-        run: docker build . -t virtualflux/clearline-streamlit:${{ github.ref_name }}
+        run: docker build . -t irtualflux/clearline-streamlit:${{ github.ref_name }}
 
       - name: Push Docker Image to Registry
-        run: docker push virtualflux/clearline-streamlit:${{ github.ref_name }}
+        run: docker push irtualflux/clearline-streamlit:${{ github.ref_name }}
