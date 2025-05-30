@@ -17,3 +17,4 @@ fastexcel==0.14.0
 sendgrid==6.10.0
 xlsx2csv==0.8.4
 psutil==7.0.0
+statsmodels==0.14.4
