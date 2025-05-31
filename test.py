@@ -9,14 +9,14 @@ if not os.path.exists(datadump_dir):
     print(f"Created directory: {datadump_dir}")
 
 # Define file paths
-g_plan_path = "/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/MEDICLOUD_group_plan.parquet"
-group_contract_path = "/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/MEDICLOUD_group_contract.parquet"
-groups_path = "/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/MEDICLOUD_all_group.parquet"
-plans_path = "/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/MEDICLOUD_plans.parquet"
-gl2024_path = "/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/GL2024.xlsx"
-gl2025_path = "/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/MEDICLOUD_FIN_GL.parquet"
-GLSETUP = pd.read_parquet("/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/MEDICLOUD_FIN_AccSetup.parquet")
-E_ACCT_GROUP = pd.read_parquet("/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/MEDICLOUD_e_account_group.parquet")
+g_plan_path = "DATADUMP/MEDICLOUD_group_plan.parquet"
+group_contract_path = "DATADUMP/MEDICLOUD_group_contract.parquet"
+groups_path = "DATADUMP/MEDICLOUD_all_group.parquet"
+plans_path = "DATADUMP/MEDICLOUD_plans.parquet"
+gl2024_path = "DATADUMP/GL2024.xlsx"
+gl2025_path = "DATADUMP/MEDICLOUD_FIN_GL.parquet"
+GLSETUP = pd.read_parquet("DATADUMP/MEDICLOUD_FIN_AccSetup.parquet")
+E_ACCT_GROUP = pd.read_parquet("DATADUMP/MEDICLOUD_e_account_group.parquet")
 
 # Check if files exist
 for file_path in [g_plan_path, group_contract_path, groups_path, plans_path, gl2024_path, gl2025_path]:
