@@ -211,7 +211,7 @@ def generate_pdf(company_name, inst_df, inst_name, month_range, total_premium, t
     elements = []
     
     # Add company logo
-    logo_path = "/Users/kenechukwuchukwuka/Downloads/streamlit/Clearline.png"
+    logo_path = "Clearline.png"
     img = Image(logo_path, width=2*inch, height=1*inch)
     elements.append(img)
     elements.append(Spacer(1, 0.5*inch))
@@ -382,16 +382,16 @@ def display_invoice(company_name, df, pattern_df):
 # Example usage:
 if __name__ == "__main__":
     # Get the data from auto_invoice
-    G_PLAN_with_dates = pd.read_excel("/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/output.xlsx")
+    G_PLAN_with_dates = pd.read_excel("DATADUMP/output.xlsx")
     
     # Read the pattern file
-    pattern_df = pd.read_excel("/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/pattern.xlsx")
+    pattern_df = pd.read_excel("DATADUMP/pattern.xlsx")
 
     #Read the 2024 and 2025ledger file
-    GL2024 = pd.read_excel("/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/GL2024.xlsx")
-    GL2025 = pd.read_parquet("/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/MEDICLOUD_FIN_GL.parquet")
-    GLSETUP = pd.read_parquet("/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/MEDICLOUD_FIN_AccSetup.parquet")
-    E_ACCT_GROUP = pd.read_parquet("/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP/MEDICLOUD_e_account_group.parquet")
+    GL2024 = pd.read_excel("DATADUMP/GL2024.xlsx")
+    GL2025 = pd.read_parquet("DATADUMP/MEDICLOUD_FIN_GL.parquet")
+    GLSETUP = pd.read_parquet("DATADUMP/MEDICLOUD_FIN_AccSetup.parquet")
+    E_ACCT_GROUP = pd.read_parquet("DATADUMP/MEDICLOUD_e_account_group.parquet")
 
     # Concatenate GL2024 and GL2025 vertically using pandas
     GL_combined = pd.concat([GL2024, GL2025], axis=0)
