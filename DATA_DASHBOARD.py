@@ -13,7 +13,7 @@ import fastexcel
 pd.options.mode.copy_on_write = True
 
 # Define the output directory
-OUTPUT_DIR = '/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP'
+OUTPUT_DIR = 'DATADUMP'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Define the API endpoints
@@ -176,7 +176,7 @@ def export_medicloud_data():
     conn = None
     try:
         # Create output directory
-        output_dir = os.path.join('/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP')
+        output_dir = os.path.join('DATADUMP')
         print(output_dir)
         os.makedirs(output_dir, exist_ok=True)
 
@@ -347,7 +347,7 @@ def export_eacount_data():
     conn = None
     try:
         # Create output directory
-        output_dir = os.path.join('/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP')
+        output_dir = os.path.join('DATADUMP')
         os.makedirs(output_dir, exist_ok=True)
 
         print("Connecting to EACOUNT database...")
