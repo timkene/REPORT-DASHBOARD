@@ -3,7 +3,7 @@ import polars as pl
 import os
 
 # Create DATADUMP directory if it doesn't exist
-datadump_dir = "/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP"
+datadump_dir = "DATADUMP"
 if not os.path.exists(datadump_dir):
     os.makedirs(datadump_dir)
     print(f"Created directory: {datadump_dir}")
