@@ -7,7 +7,7 @@ import os
 def load_data():
     # Load main data
     # Define the folder path
-    folder_path = "/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP"
+    folder_path = "DATADUMP"
     print("Loading data from:", folder_path)
 
     # Create full file paths by joining the folder path with filenames
