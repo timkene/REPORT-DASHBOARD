@@ -25,7 +25,7 @@ def load_excel_data():
     try:
         # Define the base path to your DATADUMP folder
         possible_paths = [
-            '/Users/kenechukwuchukwuka/Downloads/streamlit/DATADUMP',
+            'DATADUMP',
             os.path.join('DATADUMP'),
             'DATADUMP'
         ]
