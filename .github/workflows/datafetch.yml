@@ -1,0 +1,27 @@
+name: Run Fetch Script
+
+on:
+  schedule:
+    - cron: '0 9 * * *'   # runs every day at 9am UTC
+  workflow_dispatch:       # allows manual runs
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'  # adjust if needed
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run the script
+        run: python DATA_DASHBOARD.py
+
