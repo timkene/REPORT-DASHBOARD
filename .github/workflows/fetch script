@@ -2,7 +2,7 @@ name: Run Fetch Script
 
 on:
   schedule:
-    - cron: '0 9 * * *'   # runs every day at 10am UTC
+    - cron: '0 7 * * *'   # runs every day at 10am UTC
   workflow_dispatch:       # allows manual runs
 
 jobs:
